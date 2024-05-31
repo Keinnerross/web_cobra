@@ -1,6 +1,6 @@
 const Gallery = () => {
     return (
-        <div className="w-[100%] flex h-[650px] items-center bg-[#0f0f0f] justify-center mt-6">
+        <div className="w-full flex h-[650px] items-center bg-[#0f0f0f] justify-center mt-6">
             <div className="flex flex-col w-[80%] h-[100%] gap-4">
                 <div className="flex gap-4 justify-between">
                     <div className="w-[33%] h-[300px] bg-gray-400">img</div>

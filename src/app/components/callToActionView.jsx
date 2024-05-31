@@ -1,7 +1,7 @@
 const CallToActionView = () => {
     return (
 
-        <div className="flex w-full bg-[#0f0f0f] pb-10 h-[600px]">
+        <div className="flex w-full bg-[#0f0f0f] pb-10 h-[650px]">
             <div className="w-[28%] bg-white rounded-br-[80px]">img</div>
             <div className="flex items-center px-6 justify-center w-[44%]">
                 <div className="flex flex-col gap-8 pt-8">

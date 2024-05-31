@@ -3,7 +3,7 @@
 const Footer = () => {
     return (
         <div className="w-full h-[400px] bg-[#0f0f0f] text-white flex items-center justify-center">
-            <div className="w-[80%] flex flex-col">
+            <div className="w-[80%] flex flex-col max-w-[1550px]">
                 <div className="flex gap-12 justify-beetween border-white border-b-[2px] pt-8 pb-14">
                     <div className="w-[50%]">
                         <div>logo</div>

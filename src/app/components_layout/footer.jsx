@@ -6,7 +6,7 @@ import { AiFillInstagram } from "react-icons/ai";
 
 
 
-const Footer = () => {
+const Footer = ({ language }) => {
 
     const iconSize = 20;
 
@@ -20,11 +20,11 @@ const Footer = () => {
                             width={150}
                             height={400}
                             alt="Logotype" />
-                        <p className='py-8'>Fabricante Automotríz</p>
+                        <p className='py-8'>{language == "es" ? "Fabricante Automotríz" : "Automotive Manufacturer"}</p>
                     </div>
 
                     <div className="w-[50%] flex flex-col gap-6">
-                        <button className="w-[100%] bg-red-800  text-white rounded-full font-bold hover:bg-red-600 cursor-pointer py-4 ">Contáctenos</button>
+                        <button className="w-[100%] bg-red-800  text-white rounded-full font-bold hover:bg-red-600 cursor-pointer py-4 ">{language == "es" ? "Contáctenos" : "Contact Us"}</button>
                         <div className="flex">
                             <div className="flex flex-col gap-8 w-[50%] ">
                                 <div className='flex items-center gap-2'>
@@ -52,7 +52,7 @@ const Footer = () => {
                 </div>
                 <div>
                     <div className="icons"></div>
-                    <span>copyright 2024 - all right reserved</span>
+                    <span>Copyright 2024 - all right reserved</span>
                 </div>
             </div>
         </div>

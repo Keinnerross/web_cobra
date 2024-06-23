@@ -1,7 +1,7 @@
 
 
 
-const Gallery = () => {
+const Gallery = ({ id }) => {
 
     const images = {
         one: "assets/galeria/car (1).jpg",
@@ -15,20 +15,20 @@ const Gallery = () => {
 
 
     return (
-        <div className="py-[80px] w-full flex  items-center bg-[#0f0f0f] justify-center mt-6">
+        <div id={id} className="py-[80px] w-full flex  items-center bg-[#0f0f0f] justify-center mt-6">
             <div className="flex flex-col w-[80%] h-[100%] gap-4">
-                <h3 className="text-white font-bold text-center text-[42px] ">Galería</h3>
+                <h3 className="text-white font-bold text-center text-[42px] pb-[20px] ">Galería</h3>
 
-                <div className="flex gap-8 justify-between">
-                    <div style={{ backgroundImage: `url('${images.one}')` }} className="cursor-pointer hover:scale-[1.05] transition bg-no-repat bg-cover bg-center rounded-[25px] w-[33%] h-[300px] bg-gray-400"></div>
-                    <div style={{ backgroundImage: `url('${images.dos}')` }} className="cursor-pointer hover:scale-[1.05] transition bg-no-repat bg-cover bg-center rounded-[25px] w-[33%] h-[300px] bg-gray-400"></div>
-                    <div style={{ backgroundImage: `url('${images.tres}')` }} className="cursor-pointer hover:scale-[1.05] transition bg-no-repat bg-cover bg-center rounded-[25px] w-[33%] h-[300px] bg-gray-400"></div>
+                <div className="flex flex-col xl:flex-row gap-8 justify-between">
+                    <div style={{ backgroundImage: `url('${images.one}')` }} className="cursor-pointer hover:scale-[1.05] transition bg-no-repat bg-cover bg-center rounded-[25px] w-full xl:w-[33%] h-[300px] bg-gray-400"></div>
+                    <div style={{ backgroundImage: `url('${images.dos}')` }} className="cursor-pointer hover:scale-[1.05] transition bg-no-repat bg-cover bg-center rounded-[25px] w-full xl:w-[33%] h-[300px] bg-gray-400"></div>
+                    <div style={{ backgroundImage: `url('${images.tres}')` }} className="cursor-pointer hover:scale-[1.05] transition bg-no-repat bg-cover bg-center rounded-[25px] w-full xl:w-[33%] h-[300px] bg-gray-400"></div>
 
                 </div>
-                <div className="flex pt-4 gap-8 justify-between">
-                <div style={{ backgroundImage: `url('${images.cuatro}')` }} className="cursor-pointer hover:scale-[1.05] transition bg-no-repat bg-cover bg-center rounded-[25px] w-[33%] h-[300px] bg-gray-400"></div>
-                <div style={{ backgroundImage: `url('${images.cinco}')` }} className="cursor-pointer hover:scale-[1.05] transition bg-no-repat bg-cover bg-center rounded-[25px] w-[33%] h-[300px] bg-gray-400"></div>
-                <div style={{ backgroundImage: `url('${images.seis}')` }} className="cursor-pointer hover:scale-[1.05] transition bg-no-repat bg-cover bg-center rounded-[25px] w-[33%] h-[300px] bg-gray-400"></div>
+                <div className="flex flex-col xl:flex-row pt-4 gap-8 justify-between">
+                    <div style={{ backgroundImage: `url('${images.cuatro}')` }} className="cursor-pointer hover:scale-[1.05] transition bg-no-repat bg-cover bg-center rounded-[25px] w-full xl:w-[33%] h-[300px] bg-gray-400"></div>
+                    <div style={{ backgroundImage: `url('${images.cinco}')` }} className="cursor-pointer hover:scale-[1.05] transition bg-no-repat bg-cover bg-center rounded-[25px] w-full xl:w-[33%] h-[300px] bg-gray-400"></div>
+                    <div style={{ backgroundImage: `url('${images.seis}')` }} className="cursor-pointer hover:scale-[1.05] transition bg-no-repat bg-cover bg-center rounded-[25px] w-full xl:w-[33%] h-[300px] bg-gray-400"></div>
 
 
                 </div>

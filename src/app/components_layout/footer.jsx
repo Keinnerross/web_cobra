@@ -25,8 +25,8 @@ const Footer = ({ language }) => {
 
                     <div className="w-[50%] flex flex-col gap-6">
                         <button className="w-[100%] bg-red-800  text-white rounded-full font-bold hover:bg-red-600 cursor-pointer py-4 ">{language == "es" ? "Contáctenos" : "Contact Us"}</button>
-                        <div className="flex">
-                            <div className="flex flex-col gap-8 w-[50%] ">
+                        <div className="flex xl:flex-row flex-col">
+                            <div className="flex flex-col gap-8 xl:w-[50%] ">
                                 <div className='flex items-center gap-2'>
                                     <FaPhoneAlt size={iconSize} fill='white' />
                                     <span>9 9123 4567</span>
@@ -36,7 +36,7 @@ const Footer = ({ language }) => {
                                     <span>mail@cobra.com</span>
                                 </div>
                             </div>
-                            <div className="flex w-100% flex-col gap-8 w-[50%] ">
+                            <div className="flex w-100% flex-col gap-8 xl:w-[50%] pt-[20px] xl:p-0">
                                 <div className='flex items-center gap-2'>
                                     <AiFillInstagram size={iconSize} fill='white' />
 

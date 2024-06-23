@@ -39,7 +39,6 @@ export default function Home() {
         <Header language={language} handleLanguage={handleLanguage}
 
 
-
         />
 
         <MainSlider
